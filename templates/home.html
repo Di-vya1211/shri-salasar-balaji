@@ -1,0 +1,309 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Leading Manufacturer & Mine Owner of Premium Industrial Minerals</h1>
+        <p>From our mines directly to your facility. Delivering high-purity calcium carbonate, calite, and industrial solutions worldwide.</p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn-primary">Request a Quote</a>
+            <a href="{{ url_for('products') }}" class="btn-secondary">Explore Products</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="1.5">
+                    <circle cx="9" cy="8" r="3"/>
+                    <circle cx="17" cy="9" r="2.5"/>
+                    <path d="M3 20c0-3.5 3-6 6-6s6 2.5 6 6"/>
+                    <path d="M14 14c2.5 0 5 2 5 6"/>
+                </svg>
+                <div><h3>100+</h3><p>Members</p></div>
+            </div>
+            <div class="stat-item">
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="1.5">
+                    <path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/>
+                    <circle cx="12" cy="10" r="2.5"/>
+                </svg>
+                <div><h3>7+</h3><p>Year of Excellence</p></div>
+            </div>
+            <div class="stat-item">
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="1.5">
+                    <rect x="5" y="4" width="14" height="17" rx="2"/>
+                    <path d="M9 2h6v3H9z"/>
+                    <path d="M9 12h6M9 16h4"/>
+                </svg>
+                <div><h3>500+</h3><p>Satisfied clients</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-img-wrapper">
+        <img src="{{ url_for('static', filename='images/rocks.png') }}" alt="Hero" class="hero-img">
+    </div>
+</section>
+
+<section class="why-choose-us">
+    <h2>Why Choose Us</h2>
+    <div class="intro">
+        <h4>Why Industry Leaders Choose SSB Minerals</h4>
+        <p>At SSB Minerals, we combine premium-quality minerals, advanced processing, and dependable logistics to deliver products that meet the highest industry standards. Our commitment to quality, consistency, and customer satisfaction makes us a trusted partner across multiple industries.</p>
+    </div>
+    <div class="features-grid">
+        <div class="feature-box">
+            <div class="feature-box-header">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="1.5">
+                    <path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5l8-3z"/>
+                    <path d="M9 12l2 2 4-4"/>
+                </svg>
+                <h3>Premium Quality</h3>
+            </div>
+            <p>Every product undergoes strict quality inspections and processing to ensure consistency, purity, and compliance with industry standards before delivery.</p>
+        </div>
+
+        <div class="feature-box">
+            <div class="feature-box-header">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="1.5">
+                    <path d="M1 8h13v8H1z"/>
+                    <path d="M14 11h4l3 3v2h-7z"/>
+                    <circle cx="5" cy="18" r="1.5"/>
+                    <circle cx="17" cy="18" r="1.5"/>
+                </svg>
+                <h3>Global Supply Network</h3>
+            </div>
+            <p>Our robust logistics network ensures secure and timely deliveries across the globe, helping international businesses maintain uninterrupted operations.</p>
+        </div>
+
+        <div class="feature-box">
+            <div class="feature-box-header">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="1.5">
+                    <path d="M3 21V9l6-4 6 4v12"/>
+                    <path d="M15 21V13l6-3v11"/>
+                    <path d="M7 12h.01M7 16h.01M11 12h.01M11 16h.01"/>
+                </svg>
+                <h3>Advanced Manufacturing</h3>
+            </div>
+            <p>Equipped with modern processing facilities and advanced machinery, we efficiently handle both standard and bulk industrial requirements.</p>
+        </div>
+
+        <div class="feature-box">
+            <div class="feature-box-header">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="1.5">
+                    <path d="M12 2l9 5-9 5-9-5 9-5z"/>
+                    <path d="M3 7v10l9 5 9-5V7"/>
+                    <path d="M12 12v10"/>
+                </svg>
+                <h3>Wide Product Portfolio</h3>
+            </div>
+            <p>We offer a diverse range of industrial minerals and construction materials suitable for multiple applications across various industries.</p>
+        </div>
+
+        <div class="feature-box">
+            <div class="feature-box-header">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="1.5">
+                    <circle cx="9" cy="8" r="3"/>
+                    <path d="M3 20c0-3 3-5 6-5s6 2 6 5"/>
+                    <circle cx="18" cy="9" r="2"/>
+                    <path d="M15 20c0-2 1.5-3.5 3-4"/>
+                </svg>
+                <h3>Trusted Business Partner</h3>
+            </div>
+            <p>Our long-term relationships with clients are built on transparency, consistent product quality, and reliable customer support.</p>
+        </div>
+
+        <div class="feature-box">
+            <div class="feature-box-header">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="1.5">
+                    <path d="M12 2l2.5 5 5.5.8-4 4 1 5.5L12 15l-5 2.3 1-5.5-4-4 5.5-.8L12 2z"/>
+                </svg>
+                <h3>Competitive Pricing</h3>
+            </div>
+            <p>By managing our own mines and manufacturing facilities, we eliminate middlemen to offer highly competitive pricing without compromising on premium quality.</p>
+        </div>
+    </div>
+</section>
+
+<section class="our-products">
+    <h2>OUR PRODUCTS</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="{{ url_for('static', filename='images/product1.png') }}" alt="White Marble Powder">
+            <div class="product-info">
+                <h3>White Marble Powder</h3>
+                <p><strong>Business :</strong> Manufacturer & Exporter</p>
+                <p><strong>Form :</strong> Powder</p>
+                <p><strong>Application :</strong> Construction</p>
+                <a href="{{ url_for('products') }}" class="btn-outline">View More</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="{{ url_for('static', filename='images/product2.png') }}" alt="Milled Calcite Powder">
+            <div class="product-info">
+                <h3>Milled Calcite Powder</h3>
+                <p><strong>Business :</strong> Manufacturer & Exporter</p>
+                <p><strong>Form :</strong> Powder</p>
+                <p><strong>Application :</strong> In Plastics as Filler</p>
+                <a href="{{ url_for('products') }}" class="btn-outline">View More</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="{{ url_for('static', filename='images/product3.png') }}" alt="Natural Calcite Powder">
+            <div class="product-info">
+                <h3>Natural Calcite Powder</h3>
+                <p><strong>Business :</strong> Manufacturer & Exporter</p>
+                <p><strong>Form :</strong> Powder</p>
+                <p><strong>Application :</strong> Industrial</p>
+                <a href="{{ url_for('products') }}" class="btn-outline">View More</a>
+            </div>
+        </div>
+    </div>
+    <a href="{{ url_for('products') }}" class="btn-outline see-all">See all</a>
+</section>
+
+<section class="about-short">
+    <h2>ABOUT US</h2>
+    <div class="about-content">
+        <div class="about-text">
+            <p>Established in 2023, Shree Salasar Balaji Minerals is a premier manufacturer, supplier, and exporter of Micronized Calcium Carbonate Powder, White Marble Powder, Natural Calcite Powder, Ground Calcium Carbonate Powder, Uncoated Calcite Powder, Surface Treated Calcite Powder, and more. Under the expert leadership of Mr. Rahul Agarwal and Mr. Deepesh Tak, our firm is continually reaching new heights of success. We pride ourselves on exceptional customer service, working closely with our clients to understand their specific industrial requirements and delivering tailored solutions promptly and efficiently.</p>
+            <a href="{{ url_for('about') }}" class="btn-outline">Know More</a>
+        </div>
+        <img src="{{ url_for('static', filename='images/about us image.png') }}" alt="About Us">
+    </div>
+</section>
+
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+        <button class="faq-question">Who is Shree Salasar Balaji Minerals Group and how long have you been in business? <span>›</span></button>
+        <div class="faq-answer">
+            <p>Shree Salasar Balaji Minerals Group was established in 2018 and has grown into one of India's leading manufacturers and suppliers of industrial minerals and chemicals, backed by an experienced leadership team and a production capacity of roughly 200,000 tonnes annually.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">How do you ensure product quality and consistency? <span>›</span></button>
+        <div class="faq-answer">
+            <p>Every batch is produced in our well-equipped manufacturing units under strict, hygienic operating conditions and rigorous quality-control processes. We follow set industrial standards at every stage, and use the latest production technology to maintain reliable purity and consistency across large volumes.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">What packaging options are available for your products? <span>›</span></button>
+        <div class="faq-answer">
+            <p>Packaging is handled through our dedicated packaging division, Salasar Addpack, which offers tailored packaging solutions to suit different product types, order volumes, and shipping requirements.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">Do you supply internationally, or only within India? <span>›</span></button>
+        <div class="faq-answer">
+            <p>We supply both domestically and internationally. Beyond our India operations, Salasar International extends our reach to overseas markets including Vietnam, supporting clients who need reliable, large-scale mineral and chemical supply outside India.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">What products does Shree Salasar Balaji Minerals Group manufacture and supply? <span>›</span></button>
+        <div class="faq-answer">
+            <p>We manufacture and supply a wide range of industrial minerals including Micronized Calcium Carbonate Powder, White Marble Powder, Natural Calcite Powder, Ground Calcium Carbonate Powder, Uncoated Calcite Powder, and Surface Treated Calcite Powder, catering to industries such as construction, plastics, paints, and more.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-us">
+    <h2>CONTACT US</h2>
+    <div class="contact-wrapper">
+        <form class="contact-form">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email address">
+            <label>Phone number</label>
+            <div class="phone-input">
+                <select class="country-code">
+                    <option>+91</option>
+                </select>
+                <input type="tel" placeholder="012-345-6789">
+            </div>
+            <label>Message</label>
+            <textarea placeholder="Enter message..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="contact-accordion">
+            <button class="acc-item">Contact details <span>⌄</span></button>
+            <div class="acc-answer">
+                <p><strong>Email:</strong> info.ssbminerals@gmail.com</p>
+                <p><strong>Website:</strong> https://www.ssbminerals.in</p>
+                <p><strong>Phone Number:</strong> 8048403820</p>
+            </div>
+
+            <button class="acc-item">Address <span>⌄</span></button>
+            <div class="acc-answer">
+                <p>1004, B-Wing, Express Zone, W.E. Highway, Goregaon East, Mumbai – 400063, India</p>
+            </div>
+
+            <button class="acc-item">Purpose of Information Collected <span>⌄</span></button>
+            <div class="acc-answer">
+                <p>The information submitted through the Contact Form is used solely for:</p>
+                <p>Responding to your inquiries.<br>
+                Providing customer support.<br>
+                Scheduling consultations or appointments.<br>
+                Processing service-related requests.<br>
+                Sending quotations or service information (when requested).<br>
+                Improving our customer support experience.</p>
+                <p>We will never sell your personal information submitted through the Contact Form. Your information will only be shared with trusted service providers when necessary to respond to your request or deliver the services you have requested.</p>
+            </div>
+
+            <button class="acc-item">Business Hours <span>⌄</span></button>
+            <div class="acc-answer">
+                <p>Monday – Friday: 9:00 AM – 6:00 PM (IST)<br>
+                Saturday: 10:00 AM – 2:00 PM (IST)<br>
+                Sunday & Public Holidays: Closed</p>
+            </div>
+
+            <button class="acc-item">Contact Support <span>⌄</span></button>
+            <div class="acc-answer">
+                <p>For urgent service-related assistance, please mention "Urgent" in the subject line of your email. Our support team will make reasonable efforts to prioritize time-sensitive requests.</p>
+                <p>We value your trust and are committed to providing prompt, professional, and reliable customer support.</p>
+            </div>
+
+            <p class="contact-note">If you have any questions, require a custom quote, or need assistance regarding our industrial minerals, logistics, or bulk orders, our team is here to help.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var answer = btn.nextElementSibling;
+            var isOpen = answer.classList.contains('open');
+
+            document.querySelectorAll('.faq-answer.open').forEach(function (el) {
+                el.classList.remove('open');
+                el.previousElementSibling.querySelector('span').textContent = '›';
+            });
+
+            if (!isOpen) {
+                answer.classList.add('open');
+                btn.querySelector('span').textContent = '⌄';
+            }
+        });
+    });
+
+    // Contact accordion
+    document.querySelectorAll('.acc-item').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var answer = btn.nextElementSibling;
+            var isOpen = answer.classList.contains('open');
+
+            document.querySelectorAll('.acc-answer.open').forEach(function (el) {
+                el.classList.remove('open');
+                el.previousElementSibling.querySelector('span').textContent = '⌄';
+            });
+
+            if (!isOpen) {
+                answer.classList.add('open');
+                btn.querySelector('span').textContent = '^';
+            }
+        });
+    });
+});
+</script>
+{% endblock %}
